@@ -26,4 +26,8 @@ router.post("/create", async (req, res) => {
   res.status(201).json({ user: createdOwner });
 });
 
+router.post("/admin", async (req, res) => {
+  res.json({ msg: "test" });
+});
+
 module.exports = router;
